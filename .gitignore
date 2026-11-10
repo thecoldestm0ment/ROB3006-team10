@@ -1,0 +1,22 @@
+# 제공받은 원본 데이터는 각자 내려받아 사용합니다.
+/data/raw/
+*.zip
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# 학습 모델과 대용량 중간 산출물
+*.pkl
+*.joblib
+*.npy
+*.npz
+
+# OS 임시 파일
+.DS_Store
+Thumbs.db
+~$*
