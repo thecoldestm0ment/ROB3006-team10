@@ -10,7 +10,8 @@
 | [src/preprocess.py](src/preprocess.py) | 공통 데이터 읽기·특징 추출·분할 |
 | [src/evaluate.py](src/evaluate.py) | 공통 성능 평가·결과 저장 |
 | [notebooks/](notebooks/) | 모델별 실험 Notebook |
-| [results/](results/) | 모델별 결과표·그래프·실험 기록 |
+| [results/v1/](results/v1/) | 기본 시간 영역 특징 실험 결과 |
+| [results/v2/](results/v2/) | FFT 특징·폴더 단위 교차검증 실험 결과 |
 | [report/](report/) | 주간보고서·최종보고서 |
 | [docs/](docs/) | PPT·발표 대본 |
 | [docs/meetings/](docs/meetings/) | 회의록·교수님 피드백 |
@@ -57,11 +58,27 @@ python -m pip install -r requirements.txt
 python -m jupyterlab
 ```
 
-모델별 Notebook: `notebooks/logistic_regression.ipynb`, `notebooks/random_forest.ipynb`
+현재 공통 실험 실행 코드는 `src/run_experiments.py`입니다. 개인 PC의 원본 데이터 폴더를 지정해 두 모델의 검증·최종 시험을 같은 조건으로 실행합니다.
+
+```bash
+python -m src.run_experiments --data-root "데이터 폴더 경로"
+```
+
+`데이터 폴더 경로`에는 `normal/`과 `abnormal/` 폴더가 바로 들어 있어야 합니다. 원본 데이터는 저장소에 올리지 않습니다.
+
+## v2: 주파수 특징 및 폴더 단위 교차검증
+
+v1 결과는 `results/v1/`에, v2 결과는 `results/v2/`에 저장합니다. v2는 기존 시간 영역 특징에 FFT 기반 주파수 특징을 추가하고, 11~34번 폴더 안에서 폴더 단위 4-fold 교차검증으로 모델 설정을 선택합니다. 35~40번은 별도 검증, 1~10번은 최종 시험에만 사용합니다.
+
+```bash
+python -m src.run_experiments_v2 --data-root "데이터 폴더 경로"
+```
+
+`results/v2/folder_metrics.csv`에서 검증·시험 데이터의 폴더별 F1을 확인할 수 있습니다.
 
 ## 실험 기록
 
-각 모델의 `results/` 하위 폴더에 저장.
+각 버전 및 모델의 하위 폴더에 저장합니다. 예: `results/v1/logistic_regression/`, `results/v2/random_forest/`.
 
 | 파일 | 내용 |
 | --- | --- |
