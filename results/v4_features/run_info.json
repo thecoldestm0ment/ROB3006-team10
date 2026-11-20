@@ -1,0 +1,300 @@
+{
+  "data_root": "C:\\Users\\ember\\Downloads\\IC-PBL 기계학습론(로봇공학과)",
+  "motors": [
+    11,
+    40
+  ],
+  "n_csv": 6308,
+  "csv_length_min": 1024,
+  "csv_length_max": 1024,
+  "fs_from_time_column_hz": {
+    "min": 400.0000000000085,
+    "median": 401.6064257028125,
+    "max": 401.6064257028304,
+    "counts": {
+      "400.0": 11,
+      "401.606": 6297
+    }
+  },
+  "csv_read_seconds": 7.784690300759394,
+  "flags": {
+    "W16_zero_total_power": 0,
+    "W16_floored_bands": 0,
+    "W32_zero_total_power": 0,
+    "W32_floored_bands": 0,
+    "P16_zero_signal": 0,
+    "P32_zero_signal": 0
+  },
+  "welch": {
+    "window": "hann",
+    "nperseg": 512,
+    "noverlap": 256,
+    "detrend": false,
+    "band_edges": "band j = ((j-1)/n, j/n] x Nyquist; DC excluded, Nyquist in last band",
+    "bins_per_band": {
+      "16": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "32": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    "log_floor": 1e-12
+  },
+  "wpt": {
+    "wavelet": "sym8",
+    "mode": "periodization",
+    "node_paths_freq_order": {
+      "4": [
+        "aaaa",
+        "aaad",
+        "aadd",
+        "aada",
+        "adda",
+        "addd",
+        "adad",
+        "adaa",
+        "ddaa",
+        "ddad",
+        "dddd",
+        "ddda",
+        "dada",
+        "dadd",
+        "daad",
+        "daaa"
+      ],
+      "5": [
+        "aaaaa",
+        "aaaad",
+        "aaadd",
+        "aaada",
+        "aadda",
+        "aaddd",
+        "aadad",
+        "aadaa",
+        "addaa",
+        "addad",
+        "adddd",
+        "addda",
+        "adada",
+        "adadd",
+        "adaad",
+        "adaaa",
+        "ddaaa",
+        "ddaad",
+        "ddadd",
+        "ddada",
+        "dddda",
+        "ddddd",
+        "dddad",
+        "dddaa",
+        "dadaa",
+        "dadad",
+        "daddd",
+        "dadda",
+        "daada",
+        "daadd",
+        "daaad",
+        "daaaa"
+      ]
+    }
+  },
+  "methods": {
+    "A_v3_amp_invariant_16": 16,
+    "W16_welch_16band": 16,
+    "W32_welch_32band": 32,
+    "P16_wpt_sym8_l4_16node": 16,
+    "P32_wpt_sym8_l5_32node": 32
+  },
+  "rf_params": {
+    "n_estimators": 200,
+    "max_depth": null,
+    "min_samples_leaf": 2,
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "threshold": 0.5,
+  "split_sets": {
+    "v3_outer_folds": [
+      [
+        13,
+        17,
+        24,
+        26,
+        33,
+        35
+      ],
+      [
+        12,
+        20,
+        25,
+        27,
+        28,
+        38
+      ],
+      [
+        14,
+        18,
+        21,
+        34,
+        37,
+        40
+      ],
+      [
+        16,
+        22,
+        23,
+        29,
+        31,
+        36
+      ],
+      [
+        11,
+        15,
+        19,
+        30,
+        32,
+        39
+      ]
+    ],
+    "motor_shuffle_seed42": [
+      [
+        18,
+        27,
+        33,
+        35,
+        36,
+        40
+      ],
+      [
+        16,
+        21,
+        30,
+        31,
+        32,
+        37
+      ],
+      [
+        11,
+        14,
+        17,
+        20,
+        26,
+        29
+      ],
+      [
+        22,
+        23,
+        25,
+        28,
+        34,
+        39
+      ],
+      [
+        12,
+        13,
+        15,
+        19,
+        24,
+        38
+      ]
+    ],
+    "motor_shuffle_seed73": [
+      [
+        13,
+        22,
+        23,
+        30,
+        38,
+        39
+      ],
+      [
+        15,
+        25,
+        26,
+        27,
+        36,
+        37
+      ],
+      [
+        11,
+        28,
+        31,
+        33,
+        34,
+        40
+      ],
+      [
+        14,
+        16,
+        17,
+        18,
+        29,
+        35
+      ],
+      [
+        12,
+        19,
+        20,
+        21,
+        24,
+        32
+      ]
+    ]
+  },
+  "total_seconds": 92.20574080001097,
+  "versions": {
+    "python": "3.14.7",
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "pywavelets": "1.8.0"
+  }
+}

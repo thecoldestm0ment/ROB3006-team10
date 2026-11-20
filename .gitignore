@@ -20,3 +20,6 @@ venv/
 .DS_Store
 Thumbs.db
 ~$*
+
+# 다시 만들 수 있는 특징 캐시 (실행 시 자동 생성)
+results/*/feature_cache.csv.gz
