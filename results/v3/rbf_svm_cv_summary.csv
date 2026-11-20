@@ -1,0 +1,2 @@
+model,feature_set,selected_params,threshold,cv_mean_f1,cv_std_f1,cv_mean_precision,cv_mean_recall,selected_as_final,nested_cv_f1,nested_cv_precision,nested_cv_recall,nested_cv_mean_outer_f1,nested_cv_std_outer_f1
+RBF SVM,v3_amplitude_invariant_16,"{""C"": 10.0, ""gamma"": ""scale""}",0.0,0.9519312568318942,0.029648712383701103,0.9417408303034114,0.9676857714374574,False,0.9067331670822942,0.9472038902396666,0.8695790816326531,0.8983693389358418,0.09778351196908516

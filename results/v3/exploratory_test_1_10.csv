@@ -1,0 +1,7 @@
+source,f1_1_10,status
+v2 logistic regression,0.8698924731,exploratory_only_test_was_seen
+v2 random forest,0.9367728882,exploratory_only_test_was_seen
+v3 initial logistic regression,0.9154639175,exploratory_only_test_was_seen
+v3 initial random forest,0.9484742371,exploratory_only_test_was_seen
+v3 initial RBF SVM,0.9588905399,exploratory_only_test_was_seen
+v3 validation-tuned logistic regression,0.3007275667,exploratory_only_test_was_seen

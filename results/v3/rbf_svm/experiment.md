@@ -1,0 +1,8 @@
+# RBF SVM — 모터 단위 nested CV
+
+- 특징 세트: `v3_amplitude_invariant_16`
+- 설정: `{"C": 10.0, "gamma": "scale"}`
+- nested OOF F1: 0.9067
+- 정밀도: 0.9472; 재현율: 0.8696
+- 전체 3개 모델 비교는 상위 `model_comparison.csv`를 확인하세요.
+- 1~10번은 이번 실행에서 읽지 않았습니다.

@@ -1,0 +1,10 @@
+model,feature_set,selected_params,threshold,cv_mean_f1,cv_std_f1,cv_mean_precision,cv_mean_recall,selected_as_final
+RBF SVM,v3_amplitude_invariant_16,"{""C"": 10.0, ""gamma"": ""scale""}",0.0,0.9519312568318942,0.029648712383701103,0.9417408303034114,0.9676857714374574,False
+Random Forest,v3_amplitude_invariant_16,"{""max_depth"": null, ""min_samples_leaf"": 2, ""n_estimators"": 200}",0.5,0.9453796321363122,0.04371998935316559,0.9695135632827705,0.928396974689336,False
+RBF SVM,v3_all_22,"{""C"": 10.0, ""gamma"": ""scale""}",0.5,0.9427532415727994,0.03629295773567423,0.9695334865893468,0.9236320476495872,False
+RBF SVM,v2_all_16,"{""C"": 10.0, ""gamma"": ""scale""}",0.0,0.9422338358938301,0.045807431545688525,0.9425308285289165,0.9482438421106874,False
+Random Forest,v2_all_16,"{""max_depth"": null, ""min_samples_leaf"": 1, ""n_estimators"": 200}",0.65,0.9324804639731091,0.05982215224068422,0.9745187437478215,0.8991188474969863,False
+Random Forest,v3_all_22,"{""max_depth"": null, ""min_samples_leaf"": 1, ""n_estimators"": 200}",0.5,0.9267626989590921,0.0634196965483107,0.9468489494137188,0.9143459308417293,False
+Logistic Regression,v3_amplitude_invariant_16,"{""C"": 0.01}",0.5,0.8918313246168946,0.062289549893326274,0.8954747598835521,0.897381800970433,False
+Logistic Regression,v3_all_22,"{""C"": 0.01}",0.35,0.8779217665791738,0.039782435588006246,0.8497085623514897,0.923529753877969,False
+Logistic Regression,v2_all_16,"{""C"": 0.01}",0.35,0.853553357812574,0.03278775118738841,0.7902026775239079,0.9363278575572436,False

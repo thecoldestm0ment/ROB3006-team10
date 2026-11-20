@@ -1,0 +1,2 @@
+experiment_id,split,f1,precision,recall,tn,fp,fn,tp
+rbf_svm_v3_amplitude_invariant_16_v3,nested_group_cv_11_40,0.9067331670822942,0.9472038902396666,0.8695790816326531,,,,

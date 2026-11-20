@@ -1,0 +1,2 @@
+experiment_id,split,f1,precision,recall,tn,fp,fn,tp
+logistic_regression_v3_amplitude_invariant_16_v3,nested_group_cv_11_40,0.8683197289388572,0.8397378611855824,0.8989158163265306,,,,
