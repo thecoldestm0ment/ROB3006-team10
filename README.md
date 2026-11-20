@@ -12,6 +12,7 @@
 | [notebooks/](notebooks/) | 모델별 실험 Notebook |
 | [results/v1/](results/v1/) | 기본 시간 영역 특징 실험 결과 |
 | [results/v2/](results/v2/) | FFT 특징·폴더 단위 교차검증 실험 결과 |
+| [results/v3/](results/v3/) | 세 모델의 중첩 교차검증, 탐색 시험 결과 및 FFT 그림 |
 | [report/](report/) | 주간보고서·최종보고서 |
 | [docs/](docs/) | PPT·발표 대본 |
 | [docs/meetings/](docs/meetings/) | 회의록·교수님 피드백 |
@@ -75,6 +76,21 @@ python -m src.run_experiments_v2 --data-root "데이터 폴더 경로"
 ```
 
 `results/v2/folder_metrics.csv`에서 검증·시험 데이터의 폴더별 F1을 확인할 수 있습니다.
+
+## v3: 모터 폴더 단위 중첩 교차검증
+
+11~40번 폴더를 번호별로 묶어 로지스틱 회귀, 랜덤포레스트, RBF SVM을 비교했습니다. 안쪽 교차검증에서 특징·모델 설정·판정 기준을 고르고, 바깥 교차검증에서 따로 남긴 폴더의 예측으로 F1을 계산했습니다. 교차검증 F1이 가장 높은 랜덤포레스트(0.9172)를 최종 후보로 선정했습니다.
+
+```bash
+python -m src.run_experiments_v3 --data-root "데이터 폴더 경로"
+```
+
+이 명령은 11~40번의 교차검증과 그림을 재현합니다. 이전 실험에서도 확인한 1~10번의 점수는 탐색 시험으로 기록했습니다.
+
+- [교차검증 모델 비교표](results/v3/model_comparison.csv)
+- [모델별 분석 및 지표 설명](results/v3/model_results_analysis.md)
+- [1~10번 탐색 시험 결과](results/v3/exploratory_test_by_model_and_folder.csv)
+- [FFT 스펙트럼과 혼동행렬](results/v3/figures/)
 
 ## 실험 기록
 
