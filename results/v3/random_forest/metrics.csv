@@ -1,0 +1,2 @@
+experiment_id,split,f1,precision,recall,tn,fp,fn,tp
+random_forest_v3_amplitude_invariant_16_v3,nested_group_cv_11_40,0.9171703969939552,0.9403685092127303,0.8950892857142857,,,,

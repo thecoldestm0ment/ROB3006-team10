@@ -1,0 +1,2 @@
+model,feature_set,selected_params,threshold,cv_mean_f1,cv_std_f1,cv_mean_precision,cv_mean_recall,selected_as_final,nested_cv_f1,nested_cv_precision,nested_cv_recall,nested_cv_mean_outer_f1,nested_cv_std_outer_f1
+Logistic Regression,v3_amplitude_invariant_16,"{""C"": 0.01}",0.5,0.8918313246168946,0.062289549893326274,0.8954747598835521,0.897381800970433,False,0.8683197289388572,0.8397378611855824,0.8989158163265306,0.867142868418286,0.054628903869320476
